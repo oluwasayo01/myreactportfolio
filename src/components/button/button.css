@@ -1,0 +1,33 @@
+:root {
+    --yellow: #FDB813;
+    --gray: #EEEEEE;
+    --white: #FFFFFF;
+}
+
+.btn {
+    font-family: sans-serif;
+    font-weight: 400;
+    border-radius: 6px 6px 0px 6px;
+    border: none;
+}
+
+.btn--yellow {
+    background-color: var(--yellow);
+    color: var(--white);
+}
+
+.btn--white {
+    background-color: var(--white);
+    color: var(--yellow);
+}
+
+.btn--medium {
+    padding: 10px 20px;
+    font-size: medium;
+    width: 300px;
+}
+
+.btn--large {
+    padding: 15px 40px;
+    font-size: medium;
+}
