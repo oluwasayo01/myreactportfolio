@@ -1,3 +1,5 @@
 export const primary = "#FDB813"
 export const gray = "#A9A9A9"
-export const white = "#FFFFFF"
+export const secondary = "#FFFFFF"
+export const black = "#000000"
+export const lightgray = "#EEEEEE"

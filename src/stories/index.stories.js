@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions'
 import { withA11y } from '@storybook/addon-a11y'
 
 export default { 
-  title: 'Button',
+  title: 'Index',
   decorators: [withA11y],
 };
 

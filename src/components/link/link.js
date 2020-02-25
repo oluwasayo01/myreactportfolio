@@ -3,7 +3,7 @@ import theme from 'styled-theming'
 import PropTypes from 'prop-types'
 import * as color from '../color/color'
 import * as fontsize from '../text/fontsize'
-import * as weight from './fontweight'
+import * as weight from '../text/fontweight'
 
 const textColor = theme.variants(
     "mode",
@@ -20,7 +20,7 @@ const fontSize = theme.variants(
     "variant",
     {
         primary: {
-            main: props => fontsize.small ,
+            main: props => fontsize.xSmall ,
              subs: props => fontsize.small,
             },
     }
@@ -37,23 +37,27 @@ const fontWeight = theme.variants(
     }
 )
 
-const Text = styled.div`
+const Link = styled.a`
     color: ${textColor};
     font-size: ${fontSize};
     font-weight: ${fontWeight};
-    ${props => props.heading && css `
+    &:hover{
+        color: ${color.primary};
+        cursor: pointer;
+    }
+    ${props => props.navlogo && css `
         font-weight: ${weight.bold};
         font-size: ${fontsize.medium};
-        color: ${color.black}
+        color: ${color.primary};
     `}
 `
 
-Text.propTypes = {
+Link.propTypes = {
     variant: PropTypes.oneOf(["primary", "secondary"])
 };
 
-Text.defaultProps = {
+Link.defaultProps = {
     variant: "primary"
 };
 
-export default Text;
+export default Link;
