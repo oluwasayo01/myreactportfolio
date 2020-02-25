@@ -32,7 +32,7 @@ const fontWeight = theme.variants(
     {
         primary: {
             main: props => weight.defaultWeight,
-            //  subs: props => fontsize.small,
+             subs: props => fontsize.small,
             },
     }
 )
@@ -44,7 +44,7 @@ const Text = styled.div`
     ${props => props.heading && css `
         font-weight: ${weight.bold};
         font-size: ${fontsize.medium};
-        color: ${color.black}
+        color: ${color.black};
     `}
 `
 

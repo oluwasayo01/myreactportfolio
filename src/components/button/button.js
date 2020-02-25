@@ -3,7 +3,8 @@ import theme from 'styled-theming'
 import PropTypes from 'prop-types'
 import * as color from '../color/color'
 import * as fontsize from '../text/fontsize'
-
+import React from 'react'
+import { MdArrowBack, MdArrowForward } from 'react-icons/md'
 
 const background = theme.variants(
     "mode",
@@ -73,12 +74,28 @@ const Button = styled.button`
     ${props => props.arrow && css `
         color: ${textColor};
         background-color: ${background};
-        padding: 5px;
-        border-radius: 0px;
-        margin-bottom: 2px;
+        padding: 12px 16px;
+        border-radius: ${
+            props => props.arrow === "left" ? "5px": "0px"} 0px 0px
+            ${props => props.arrow === "right"? "5px": "0px"};
+        margin-bottom: 0px;
+        &:hover {
+            background-color: yellow;
+        }
 
     `}
     `
+
+
+export const ArrowButton = () => {
+    return (
+        <div>
+            <Button arrow="left"><MdArrowBack/></Button><br/>
+            <Button arrow="right"><MdArrowForward/></Button>
+        </div>
+    )
+}
+
 
 Button.propTypes = {
     variant: PropTypes.oneOf(["primary", "secondary"])
