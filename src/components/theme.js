@@ -1,23 +1,23 @@
-import * as color from './color/color'
-import * as fontsize from './text/fontsize'
-import * as fontweight from './text/fontweight'
-import * as icons from './icons'
-import theme from 'styled-theming'
+import { createContext } from 'react'
+// import { themes, ThemeContext } from '../components/'
+// import * as color from './color/color'
+// import * as fontsize from './text/fontsize'
+// import * as fontweight from './text/fontweight'
+// import * as icons from './icons'
 
-const background = theme.variants(
-    "mode",
-    "variant",
-    {
-        default: {
-            
-        }
-    }
-)
-// const theme = {
-//     color,
-//     fontsize,
-//     fontweight,
-//     icons,
-// };
 
-export default theme
+export const themes = {
+    main: {
+        primary: "main",
+        secondary:"subs",
+    },
+    subs: {
+        primary: "subs",
+        secondary: "main",
+    },
+}
+
+
+export const MyThemeContext = createContext({
+    theme: themes.main,
+})

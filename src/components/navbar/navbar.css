@@ -1,0 +1,20 @@
+:root {
+    --primary: #FDB813;
+    --gray: #A9A9A9;
+    --secondary: #FFFFFF;
+    --lightgray: #EEEEEE;
+    --black: #000000;
+}
+
+hr {
+    background-color: var(--primary) ;
+    color: var(--primary);
+    height: 1px;
+    border: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

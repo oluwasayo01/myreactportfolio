@@ -41,10 +41,13 @@ const Text = styled.div`
     color: ${textColor};
     font-size: ${fontSize};
     font-weight: ${fontWeight};
+    margin-bottom:2%;
     ${props => props.heading && css `
         font-weight: ${weight.bold};
         font-size: ${fontsize.medium};
         color: ${color.black};
+        margin-bottom: 1.5%;
+        
     `}
 `
 

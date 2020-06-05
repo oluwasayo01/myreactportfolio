@@ -41,6 +41,7 @@ const Link = styled.a`
     color: ${textColor};
     font-size: ${fontSize};
     font-weight: ${fontWeight};
+    padding: 0px 20px;
     &:hover{
         color: ${color.primary};
         cursor: pointer;

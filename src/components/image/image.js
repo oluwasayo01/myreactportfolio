@@ -1,5 +1,4 @@
-import styled, { css } from 'styled-components'
-import theme from 'styled-theming'
+import styled from 'styled-components'
 
 
 

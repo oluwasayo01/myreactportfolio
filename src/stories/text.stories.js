@@ -3,6 +3,7 @@ import Text  from "../components/text/text";
 import { action } from "@storybook/addon-actions";
 import { withA11y } from "@storybook/addon-a11y";
 import { withKnobs, text } from '@storybook/addon-knobs'
+import { ThemeProvider } from "styled-components";
 
 export default {
     title: "Text",
@@ -10,14 +11,18 @@ export default {
 };
 
 export const heading = () => (
-    <Text type={text("type", "link")} >
-    </Text>
+    <ThemeProvider theme={{mode:"main"}}>
+        <Text heading type={text("type", "link")} >
+            Hello World!
+         </Text>
+    </ThemeProvider>
 );
 
-export const link = () => (
-    <Text type={text("type", "link")}> Hello </Text>
-);
 
 export const body = () => (
-    <Text>About Me</Text>
+    <ThemeProvider theme={{mode: "main"}}>
+        <Text type={text("type", "link")} >
+            Hello there
+    </Text>
+    </ThemeProvider>
 );

@@ -1,0 +1,67 @@
+:root {
+    --primary: #FDB813;
+    --gray: #A9A9A9;
+    --secondary: #FFFFFF;
+    --lightgray: #EEEEEE;
+    --black: #000000;
+}
+
+.card {
+    display:grid;
+    grid-template-columns: 30% 60% 10%;
+    border: 1px solid var(--primary);
+    height: 250px;
+    border-radius: 10px;
+    overflow-y: hidden;
+}
+
+.item1 {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: var(--primary);
+    justify-content: center;
+    height: 100%;
+    padding: 0px 30px;
+    border-radius: 0px 20px 20px 0px;
+    min-width: 320px;
+    text-align: left;
+}
+
+.item2 {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0px 0px 0px 100px; 
+    max-width: 320px;
+    text-align: left;
+    margin-left: 100px;
+}
+
+
+.item3 {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.card-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    background-color: var(--primary);
+    border-radius: 20px 0px 20px 20px;
+
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+
+}
+
+a::after {
+    text-decoration: none;
+    color: initial;
+}

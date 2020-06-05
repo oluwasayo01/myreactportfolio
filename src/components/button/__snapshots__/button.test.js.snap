@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot of a button element 1`] = `
+Array [
+  <button
+    className="sc-AxjAm bUCjQH"
+  />,
+  ";",
+]
+`;
