@@ -2,8 +2,17 @@
   "name": "myreactportfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.14.4",
+    "node": "12.16.2"
+  },
   "dependencies": {
     "@babel/core": "^7.8.4",
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/free-regular-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.8",
     "@storybook/react": "^5.3.13",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -11,9 +20,14 @@
     "babel-loader": "^8.0.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-icons": "^3.9.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
+    "react-test-renderer": "^16.13.0",
     "storybook": "^5.3.13",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.0.1",
+    "styled-system": "^5.1.5",
+    "styled-theming": "^2.2.0"
   },
   "scripts": {
     "storybook": "start-storybook",
@@ -41,6 +55,7 @@
     "@storybook/addon-a11y": "^5.3.13",
     "@storybook/addon-actions": "^5.3.13",
     "@storybook/addon-knobs": "^5.3.13",
-    "@storybook/addon-storysource": "^5.3.13"
+    "@storybook/addon-storysource": "^5.3.13",
+    "snapshot-diff": "^0.7.0"
   }
 }

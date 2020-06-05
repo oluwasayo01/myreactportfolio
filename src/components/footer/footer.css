@@ -1,0 +1,35 @@
+:root {
+    --primary: #FDB813;
+    --gray: #A9A9A9;
+    --secondary: #FFFFFF;
+    --lightgray: #EEEEEE;
+    --black: #000000;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+hr {
+    background-color: var(--primary);
+    margin-top: 50px;
+}
+
+.footer2 {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+
+}
+
+.footer-icons > a {
+   margin-right: 20px;
+}
+
+.footer-icons > a:hover {
+    color: var(--primary);
+}
+

@@ -5,27 +5,17 @@ import { withA11y } from "@storybook/addon-a11y";
 import { withKnobs, text } from "@storybook/addon-knobs";
 import { ThemeProvider } from "styled-components";
 import { FaFacebook } from "react-icons/fa"
+import { Navbar } from "../components/navbar/navbar";
 // import theme from "../components/theme";
 
 export default {
-    title: "Button",
+    title: "Navbar",
     decorators: [withA11y, withKnobs]
 };
 
 export const mainButton = () => (
     <ThemeProvider theme={{mode:"main"}}>
-        <Button>{text("Label", "Hire me")}</Button>
+        <Navbar/>
     </ThemeProvider>
 );
 
-export const secondaryButton = () => (
-    <ThemeProvider theme={{mode: "subs"}}>
-        <Button>{text("Label", "Say, Hello!")}</Button>
-    </ThemeProvider>
-);
-
-export const iconedButton = () => (
-    <ThemeProvider theme={{mode: "main"}}>
-        <Button icon="whatever" variant="secondary" onClick={action("Clicked")}><FaFacebook/>Download CV</Button>
-    </ThemeProvider>
-);
